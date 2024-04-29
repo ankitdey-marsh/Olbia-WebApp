@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    font-size : 100px;
+    font-weight:400;
+    font-family:Cardo;
+}
+p{
+    position:relative;
+    display:inline-block;
+    top:1.7rem;  
+    font-size:0.35rem;
+    transform:scaleY(0.9);
+    letter-spacing:3px;
+    color:white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.topdiv{
+    text-align:center;
+    position:relative;
+    background-image: url("../olbia/1475658092734_1453212140091_Ceremony3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:101%;
+    height:100vh;
+}
+.topdiv_img{
+    height:99%;
+    width:100%;
+    
+}
