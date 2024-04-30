@@ -5,6 +5,9 @@
     font-weight:400;
     font-family:Cardo;
 }
+a{
+    text-decoration:none;
+}
 .topdiv-p{
     position:relative;
     display:inline-block;
@@ -96,4 +99,79 @@
 {
     color:rgb(162 162 163 / 0.8);
     border-bottom: thin solid rgb(162 162 163 / 0.2);
+}
+.thirddiv{
+    height:100vh;
+    background-color:#f5f5f4;
+    position:relative;
+}
+.pages{
+    display:block;
+    width:3.6rem;
+    height:3rem;
+    position:relative;
+    left:1.5rem;
+    top:1.5rem;
+    z-index:1;
+    
+}
+.categories{
+    background-color:white;
+    width:3.6rem;
+    min-height:0.6rem;
+    position:relative;
+}
+.weddings{
+    background-color:white;
+    width:3.6rem;
+    height:0.8rem;
+}
+.engagements{
+    background-color:white;
+    width:3.6rem;
+    height:0.8rem;
+}
+.couples{
+    background-color:white;
+    width:3.6rem;
+    height:0.8rem;
+}
+.spare{
+    background-color:white;
+    width:3.6rem;
+    min-height:0.5rem;
+}
+.wedding-works{
+    height:5.5rem;
+    width:7.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    display:inline-block;
+    position:absolute;
+    top:0.3rem;
+    left:4.7rem;
+    background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/04/2000-vadim_dodon-337c5474f8b5956f198713559bf6c8ab.jpg);
+}
+.categories-text{
+    font-size:0.07rem;
+    position:relative;
+    color:#a2a2a3;
+    font-weight:700;
+    font-family:Roboto;
+    letter-spacing:2px;
+    left:55px;
+    top:0.44rem;
+}
+.pages-title{
+    position:relative;
+    font-family:Cardo;
+    font-size:0.25rem;
+    letter-spacing:1px;
+    /* color:#a2a2a3; */
+    color:black;
+    font-weight:700;
+    position:relative;
+    top:0.3rem;
+    left:50px;
 }
