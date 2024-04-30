@@ -5,11 +5,11 @@
     font-weight:400;
     font-family:Cardo;
 }
-p{
+.topdiv-p{
     position:relative;
     display:inline-block;
     top:1.7rem;  
-    font-size:0.35rem;
+    font-size:0.4rem;
     transform:scaleY(0.9);
     letter-spacing:3px;
     color:white;
@@ -29,5 +29,53 @@ p{
 .topdiv_img{
     height:99%;
     width:100%;
+    
+}
+.secondtopdiv{
+    height:100vh;
+    text-align:center;
+}
+.small-p{
+    font-size:12px;
+    letter-spacing:1px;
+    color:#a2a2a3;
+    font-weight:700;
+    position:relative;
+    top:1.28rem
+}
+.middiv-p{
+    color:black;
+    position:relative;
+    display:inline-block;
+    top:0.8rem; 
+    font-size:0.37rem;
+    font-weight:600;
+    transform:scaleY(0.9);
+}
+.secondtopdiv{
+    position:relative;
+    left
+    width:20%;
+}
+.middiv-leafcontainer{
+    position:relative;
+    top:1rem;
+}
+.middiv-leaf{
+    width:20%;
+}
+.Olbia-description{
+    position:relative;
+    top:0.9rem;
+    margin: 0 auto;
+    width:61.51%;
+    text-align:center;
+}
+.Olbia-desc{   
+    font-family:Roboto;
+    font-size:16px;
+    font-weight:400;
+    display:inline-block;
+    color:#a2a2a3;
     
 }
