@@ -142,7 +142,7 @@ a{
     min-height:0.5rem;
 }
 .wedding-works{
-    height:5.5rem;
+    height:5rem;
     width:7.5rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -154,11 +154,9 @@ a{
     transition:0.3s;
     background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/04/2000-vadim_dodon-337c5474f8b5956f198713559bf6c8ab.jpg);
 }
-.wedding-works:hover{
-    filter:brightness(50%);
-}
+
 .engagement-works{
-    height:5.5rem;
+    height:5rem;
     width:7.5rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -170,11 +168,9 @@ a{
     transition:0.3s;
     background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/05/2000-vadim_dodon-328f92495269537df3539d069c3c39ce.jpg);
 }
-.engagement-works:hover{
-    filter:brightness(50%);
-}
+
 .couple-works{
-    height:5.5rem;
+    height:5.0rem;
     width:7.5rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -186,9 +182,7 @@ a{
     transition:0.3s;
     background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/04/2000-vadim_dodon-1d5342ca9550220b8f96a1d2d18da8fa.jpg);
 }
-.couple-works:hover{
-    filter:brightness(50%);
-}
+
 .categories-text{
     font-size:0.12rem;
     position:relative;
@@ -211,11 +205,46 @@ a{
     left:50px;
     transition:0.8s
 }
-.pages-title:hover{
-    color:black;
+.shadow:hover{
+    opacity:1;
 }
 .active{
     color:black;
+}
+
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:1;
+    opacity:0;
+    transition:0.3s;
+}
+
+
+.wedding-works-btn{
+    position:relative;
+    width:1.7rem;
+    height:0.5rem;
+    z-index:2;
+    background-color:white;
+    border-radius:5px;
+    left:2.8rem;
+    top:2.2rem;
+    opacity:1;
+    transition:0.3s;
+    letter-spacing:1px;
+}
+.wedding-works-btn-text{
+    font-size:13px;
+    color:black;
+    position:relative;
+    top:0.17rem;
+    left:0.34rem;
+}
+.wedding-works-btn:hover{
+    opacity:0.5;
 }
 
 
