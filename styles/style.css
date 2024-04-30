@@ -66,7 +66,7 @@
 }
 .Olbia-description{
     position:relative;
-    top:0.9rem;
+    top:0.6rem;
     margin: 0 auto;
     width:61.51%;
     text-align:center;
@@ -78,4 +78,22 @@
     display:inline-block;
     color:#a2a2a3;
     
+}
+.aboutme-btn{
+    text-decoration:none;
+    font-family:Roboto;
+    font-size:12px;
+    letter-spacing:1.2px;
+    position:relative;
+    top:-15px;
+    color:black;
+    font-weight:500;
+    border-bottom: thin solid #a2a2a3;
+    padding-bottom:4px;
+    transition-duration: 0.4s;
+}
+.aboutme-btn:hover
+{
+    color:rgb(162 162 163 / 0.8);
+    border-bottom: thin solid rgb(162 162 163 / 0.2);
 }
