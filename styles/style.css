@@ -175,3 +175,116 @@ a{
     top:0.3rem;
     left:50px;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+}
+.list{
+    font-size: medium;
+    font-family: Notera;
+    color: black;
+}
+.last{
+    font-size: medium;
+    font-family: Notera;
+    color: black;
+}
+.second-list{
+    width:10%;
+}
+.title {
+    width:10%;
+
+}
+.footer-title{
+    font-family:"Cedarville Cursive";
+    font-size: 0.5rem;
+}
+.last-title{
+    width:10%;
+}
+.final {
+    width: 50%;
+}
+.title-final{
+    font-family:Notera;
+    font-size: small;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.insta:hover .image {
+    opacity: 0.3;
+}
+.insta {
+    position: relative;
+    width: 2%;
+    left: 1110px;
+    top: -125px;
+
+}
+.image-fb {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.fb:hover .image-fb {
+    opacity: 0.3;
+}
+.fb {
+    position: relative;
+    width: 2%;
+    left: 1140px;
+    top: -150px;
+
+}
+.image-x {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.x:hover .image-x {
+    opacity: 0.3;
+}
+.x {
+    position: relative;
+    width: 2%;
+    left: 1170px;
+    top: -175px;
+
+}
+.image-pin {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.pin:hover .image-pin{
+    opacity: 0.3;
+}
+.pin {
+    position: relative;
+    width: 2%;
+    left: 1200px;
+    top: -200px;
+
+}
+
+  
