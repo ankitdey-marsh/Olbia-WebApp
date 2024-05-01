@@ -79,3 +79,6 @@ window.addEventListener('scroll', () => {
 });
 
 
+document.getElementById('email').addEventListener('input', function() {
+    this.style.opacity = 0.7;
+  });
