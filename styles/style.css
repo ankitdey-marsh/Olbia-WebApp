@@ -37,6 +37,16 @@ a{
 .secondtopdiv{
     height:100vh;
     text-align:center;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+.secondtopdiv.in-view{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 .small-p{
     font-size:12px;
@@ -104,6 +114,17 @@ a{
     height:100vh;
     background-color:#f5f5f4;
     position:relative;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;  
+
+}
+.thirddiv.in-view{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 .pages{
     display:block;
@@ -113,7 +134,16 @@ a{
     left:1.5rem;
     top:1.5rem;
     z-index:1;
-    
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility;  
+}
+.pages.in-view{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 .categories{
     background-color:white;
@@ -142,7 +172,7 @@ a{
     min-height:0.5rem;
 }
 .wedding-works{
-    height:5.5rem;
+    height:5rem;
     width:7.5rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -151,26 +181,55 @@ a{
     position:absolute;
     top:0.3rem;
     left:4.7rem;
+    transition:0.3s;
     background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/04/2000-vadim_dodon-337c5474f8b5956f198713559bf6c8ab.jpg);
 }
+
+.engagement-works{
+    height:5rem;
+    width:7.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    display:none;
+    position:absolute;
+    top:0.3rem;
+    left:4.7rem;
+    transition:0.3s;
+    background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/05/2000-vadim_dodon-328f92495269537df3539d069c3c39ce.jpg);
+}
+
+.couple-works{
+    height:5.0rem;
+    width:7.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    display:none;
+    position:absolute;
+    top:0.3rem;
+    left:4.7rem;
+    transition:0.3s;
+    background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/04/2000-vadim_dodon-1d5342ca9550220b8f96a1d2d18da8fa.jpg);
+}
+
 .categories-text{
-    font-size:0.07rem;
+    font-size:0.12rem;
     position:relative;
     color:#a2a2a3;
-    font-weight:700;
+    font-weight:400;
     font-family:Roboto;
     letter-spacing:2px;
-    left:55px;
+    left:54px;
     top:0.44rem;
 }
 .pages-title{
     position:relative;
     font-family:Cardo;
-    font-size:0.25rem;
-    letter-spacing:1px;
-    /* color:#a2a2a3; */
-    color:black;
-    font-weight:700;
+    font-size:0.28rem;
+    letter-spacing:2px;
+    color:#a2a2a3;
+    font-weight:400;
     position:relative;
     top:0.3rem;
     left:50px;
@@ -339,6 +398,7 @@ a{
   transform: translate(-50%, -50%);
   text-align: center;
   background-color: white;
+  transition:0.8s;
   color: black;
   padding: 16px 32px;
 }
@@ -357,5 +417,56 @@ a .charmed:hover {
 }
 .overlay-couple:hover {
     opacity: 0.3;
-} 
-  
+    
+}
+.pages-title:hover{
+    color:black;
+}
+.active{
+    color:black;
+}
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:1;
+    opacity:0;
+    transition:0.3s;
+}
+.shadow:hover{
+    opacity:1;
+}
+.wedding-works-btn{
+    position:relative;
+    width:1.7rem;
+    height:0.5rem;
+    z-index:2;
+    background-color:white;
+    border-radius:5px;
+    left:2.8rem;
+    top:2.2rem;
+    opacity:1;
+    transition:0.3s;
+    letter-spacing:1px;
+}
+.wedding-works-btn-text{
+    font-size:13px;
+    color:black;
+    position:relative;
+    top:0.17rem;
+    left:0.34rem;
+}
+.wedding-works-btn:hover{
+    opacity:0.5;
+}
+.fade-in {
+    animation: fadeIn 1s forwards;
+  } 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
