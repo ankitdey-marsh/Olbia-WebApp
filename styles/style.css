@@ -398,6 +398,18 @@ a{
       opacity: 1;
     }
   }
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+  } 
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
 footer {
     background-color: #282828;
 }
@@ -481,4 +493,150 @@ footer {
     letter-spacing:2px;
     color: black;
     transform:translateY(125%);
+}
+
+.testimonials{
+    background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/06/2000-vadim_dodon-9901a20d968428349faae26e6b96e637.jpg);
+    height:95vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    text-align:center;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility; 
+}
+.testimonials.in-view{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+.testimonials-dark{
+    height:95vh;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+}
+.testimonials-text{
+    height:95vh;
+    width:100%;
+    color:white;
+}
+
+.testimonial-text-move{
+    position:absolute;
+    display:none;
+    color:white;
+    transition: all 0.3s ease-in-out;
+}
+.testimonial-text-move2{
+    position:absolute;
+    display:none;
+    color:white;
+    transition: all 0.3s ease-in-out;
+}
+.testimonial-text-move.active,.testimonial-text-move2.active {
+    display: block;
+}
+.numbering{
+    position:relative;
+    top:1.13rem;
+    left:0.02rem;
+    font-weight:200;
+    font-family:Cardo;
+    font-size:15px;
+    opacity:0.7;
+    font-style:italic;
+}
+.fixed-numbering{
+    position:relative;
+    font-family:Cardo;
+    left:-0.02rem;
+    top:1.26rem;
+    font-size:15px;
+    font-weight:200;
+    opacity:0.7;
+    font-style:italic;
+}
+.box{
+    border-bottom:1px solid rgba(156, 156, 156, 1);
+    width:2%;
+    position:absolute;
+    left:6.34rem;
+    top:3.38rem;
+    transform: rotate(-60deg) translate(-50%, -50%);
+}
+
+.ttm{
+    font-family:Cardo;
+    font-size:15px;
+}
+.testimonials-literal-text{
+    font-size:30px;
+    letter-spacing:4px;
+    position:relative;
+    top:1rem;
+    color:white;
+}
+.testimonials-names{
+    position:relative;
+    top:1.4rem;
+    font-size:12px;
+    font-family:Asul;
+    letter-spacing:3px;
+    font-weight:500;
+}
+.quotes{
+    position:relative;
+    top:1.7rem;
+    font-size:25px;
+    font-family:Cardo;
+    font-style:italic;
+    letter-spacing:2px;
+    line-height:40px;
+    max-width:61%;
+    text-align:center;
+    left:2.5rem;
+
+}
+
+.left-arrow{
+    position:relative;
+    left:-4.3rem;
+    top:1.65rem;
+    transition:0.4s;
+}
+.left-arrow:hover{
+    opacity:0.5;
+}
+.right-arrow{
+    position:relative;
+    right:-5.3rem;
+    transition:0.4s;
+    top:1.65rem;
+}
+.right-arrow:hover{
+    opacity:0.5;
+}
+.photos{
+    position:relative;
+    top:3.3rem;
+    left:-0.5rem;
+    border-bottom:1px solid white;
+    padding-bottom:6.3px;
+    display:inline-block;
+    transition:0.4s;
+}
+.photos:hover{
+    opacity:0.5;
+}
+.photos-text{
+    font-family:Cardo;
+    font-size:12px;
+    color:white;
+    font-weight:100;
+    letter-spacing:2px;
 }
