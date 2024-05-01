@@ -41,3 +41,41 @@ button3.addEventListener('click',()=>{
 });     
 
 
+
+
+//fade in animations for secondtopdiv
+const fadeInSection = document.querySelector('.secondtopdiv');
+window.addEventListener('scroll', () => {
+    const rect = fadeInSection.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      fadeInSection.classList.add('in-view');
+    } else {
+      fadeInSection.classList.remove('in-view');
+    }
+});
+
+//fade in animations for thirddiv
+const fadeInSection_2 = document.querySelector('.thirddiv');
+window.addEventListener('scroll', () => {
+    const rect = fadeInSection_2.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      fadeInSection_2.classList.add('in-view');
+    } else {
+      fadeInSection_2.classList.remove('in-view');
+    }
+});
+
+const fadeInSection_3 = document.querySelector('.pages');
+window.addEventListener('scroll', () => {
+    const rect = fadeInSection_3.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      fadeInSection_3.classList.add('in-view');
+    } else {
+      fadeInSection_3.classList.remove('in-view');
+    }
+});
+
+
