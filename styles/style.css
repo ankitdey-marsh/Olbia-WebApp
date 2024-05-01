@@ -245,12 +245,14 @@ a{
 .list{
     font-size: medium;
     font-family: Notera;
-    color: black;
+    color: #f5f5f4;
+    letter-spacing: 2px;
 }
 .last{
     font-size: medium;
     font-family: Notera;
-    color: black;
+    color: #f5f5f4;
+    letter-spacing: 2px;
 }
 .second-list{
     width:10%;
@@ -262,25 +264,29 @@ a{
 .footer-title{
     font-family:"Cedarville Cursive";
     font-size: 0.5rem;
+    color: #f5f5f4;
+    top: -40px;
+    position: relative;
 }
+
 .last-title{
-    width:10%;
+    width:15%;
 }
 .final {
-    width: 50%;
+    width: 100%;
+    position: relative;
+    left: 65px;
+    top: -5px;
+
 }
 .title-final{
-    font-family:Notera;
-    font-size: small;
+    font-family:Cardo;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 29px;
+    letter-spacing: 2px;
 }
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
+
 .insta:hover .image {
     opacity: 0.3;
 }
@@ -291,15 +297,8 @@ a{
     top: -125px;
 
 }
-.image-fb {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-.fb:hover .image-fb {
+
+.fb:hover .image{
     opacity: 0.3;
 }
 .fb {
@@ -309,15 +308,8 @@ a{
     top: -150px;
 
 }
-.image-x {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-.x:hover .image-x {
+
+.x:hover .image{
     opacity: 0.3;
 }
 .x {
@@ -327,15 +319,17 @@ a{
     top: -175px;
 
 }
-.image-pin {
+.image {
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    height: 25px;
     transition: .5s ease;
-    backface-visibility: hidden;
+    z-index: 2;
+    filter: invert(64%) sepia(0%) saturate(479%) hue-rotate(146deg) brightness(96%) contrast(93%);
+
 }
-.pin:hover .image-pin{
+.pin:hover .image{
     opacity: 0.3;
 }
 .pin {
@@ -470,3 +464,6 @@ a .charmed:hover {
       opacity: 1;
     }
   }
+footer {
+    background-color: #282828;
+}
