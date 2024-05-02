@@ -120,3 +120,38 @@ window.addEventListener('scroll', () => {
       fadeInSection_5.classList.add('in-view');
     }
 });
+
+
+
+//contact page load
+const contactButton = document.querySelector('.contact');
+const navbar = document.querySelector('.nav-olbia');
+const topdiv = document.querySelector('.topdiv');
+const secondtopdiv = document.querySelector('.secondtopdiv');
+const thirddiv = document.querySelector('.thirddiv');
+const testimonials = document.querySelector('.testimonials');
+const fourthdiv = document.querySelector('.fourthdiv');
+const lastdiv = document.querySelector('.lastdiv');
+const image_container = document.querySelector('.image-container');
+const contact_page = document.querySelector('.contact-page');
+contactButton.addEventListener('click', () => {
+  topdiv.classList.add('hidden');
+  navbar.style.color='black';
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  image_container.classList.add('not-hidden');
+  contact_page.classList.add('not-hidden');
+});
+
+
+const backgroundContainer = document.querySelector('.image-container');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.pageYOffset;
+  const containerHeight = backgroundContainer.offsetHeight;
+  const newPosition = (scrollPosition / containerHeight) * 20 ;
+  backgroundContainer.style.backgroundPositionY = `${newPosition+50}%`;
+});
