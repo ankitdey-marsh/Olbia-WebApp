@@ -11,10 +11,68 @@ a{
 .topdiv-p{
     position:relative;
     display:inline-block;
-    top:1.7rem;  
+    top:1.9rem;  
     font-size:0.4rem;
     transform:scaleY(0.9);
     letter-spacing:3px;
+    color:white;
+    transition:0.4s;
+}
+
+.navbar{
+    position:relative;
+    left:2.4rem;
+    height:1rem;
+    width:65vw;
+    position:absolute;
+    /* background-color:black; */
+    display:flex;
+    justify-content:space-around;
+}
+.nav-elements{
+    height:0;
+}
+.nav-elements-text{
+    position:relative;
+    height:0;
+    top:-0.45rem;
+}
+
+.nav-elements-text-p{
+    font-size:13px;
+    font-family:Asul;
+    color:#524C42;
+    letter-spacing:3px;
+    transition:0.4s;
+}
+.nav-elements-text-p:hover{
+    opacity:0.5;
+}
+.nav-olbia{
+    font-family:"Cedarville Cursive";
+    font-size:0.5rem;
+    position:relative;
+    color:white;
+    top:0.1rem;
+}
+.topdiv-a:hover .topdiv-p{
+    opacity:0.5;
+}
+.view-gallery{
+    width:9.5%;
+    position:relative;
+    left:5.75rem;
+    letter-spacing:2px;
+    border-bottom: thin solid white;
+    padding-bottom:7px;
+    top:2.2rem;
+    transition:0.4s;
+}
+.view-gallery:hover{
+    opacity:0.5;
+}
+.view-gallery-text{
+    font-size:12px;
     color:white;
 }
 ::-webkit-scrollbar {
