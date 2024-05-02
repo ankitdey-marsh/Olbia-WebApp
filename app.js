@@ -50,8 +50,6 @@ window.addEventListener('scroll', () => {
     const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
     if (isInView) {
       fadeInSection.classList.add('in-view');
-    } else {
-      fadeInSection.classList.remove('in-view');
     }
 });
 
@@ -62,8 +60,6 @@ window.addEventListener('scroll', () => {
     const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
     if (isInView) {
       fadeInSection_2.classList.add('in-view');
-    } else {
-      fadeInSection_2.classList.remove('in-view');
     }
 });
 
@@ -73,12 +69,45 @@ window.addEventListener('scroll', () => {
     const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
     if (isInView) {
       fadeInSection_3.classList.add('in-view');
-    } else {
-      fadeInSection_3.classList.remove('in-view');
     }
 });
 
 
 document.getElementById('email').addEventListener('input', function() {
     this.style.opacity = 0.7;
+});
+
+
+
+const cyclingDivs = document.querySelector('.testimonials-text');
+const divs = cyclingDivs.children;
+let currentDiv = 0;
+
+divs[currentDiv].classList.add('active');
+document.getElementsByClassName('left-arrow')[0].addEventListener('click', function() {
+    divs[currentDiv].classList.remove('active');
+    divs[currentDiv].classList.remove('fade-in');
+    currentDiv = (currentDiv - 3 + divs.length) % (divs.length-2);
+    divs[currentDiv].classList.add('active');
+    divs[currentDiv].classList.add('fade-in');
   });
+
+  document.getElementsByClassName('right-arrow')[0].addEventListener('click', function() {
+    divs[currentDiv].classList.remove('active');
+    divs[currentDiv].classList.remove('fade-in');
+    currentDiv = (currentDiv + 3) % (divs.length-2);
+    divs[currentDiv].classList.add('active');
+    divs[currentDiv].classList.add('fade-in');
+  });
+
+
+  //fade in for testimonials
+
+const fadeInSection_4 = document.querySelector('.testimonials');
+window.addEventListener('scroll', () => {
+    const rect = fadeInSection_4.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      fadeInSection_4.classList.add('in-view');
+    }
+});
