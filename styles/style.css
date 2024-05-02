@@ -496,79 +496,78 @@ footer {
 }
 .fourth-outer-div{
     color: #ffffff;
-    height: 3rem;
-    width: 8rem;
+    height: 779px;
+    max-width: 100%;
 }
+
 .fourthdiv{
     color: #ffffff;
     height: 3rem;
-    width: 5rem;
+    width:100%;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility; 
+}
+.fourthdiv.in-view{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 .wphunters{
-    width:1.5rem;
-    height:1.5rem;
     background-color: white;
     position:relative;
     border: 1px solid #f5f5f4;
     border-width: 1.75px;
     text-align: center;
     transition:0.4s;
-    left: 80px;
-    bottom: -100px;
 }
 .link-1 {
     font-family: Cardo;
-    letter-spacing: 1px;
-    width: 10px;
+    letter-spacing: 2px;
+    width: 166px;
+    height:166px;
     color: black;
     font-size: 20px;
     position: relative;
-    left: 30px;
-    bottom: -45px;
+    font-weight:light;
+    /* left: 30px;
+    bottom: -45px; */
+    top:0.5rem;
 }
 .link-2 {
-    font-family: Cardo;
-    letter-spacing: 1px;
+    font-family: Asul;
+    letter-spacing: 2px;
     color: #9b9b9b;
     font-size: 13px;
     position: relative;
-    bottom: -55px;
-    font-weight: bold;
+    /* bottom: -55px; */
+    font-weight: light;
+    
+    top:-0.8rem;
 }
 .wphunters:hover{
     opacity:0.55;
+    min-width: 166px;
+    height: 166px;
 }
 .image-couple{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 166px;
+    height: 166px;
 }
-.image-1{
-    position: relative;
-    left:270px;
-    top: -53px;
-}
-.image-2{
-    position: relative;
-    left:450px;
-    top: -240px;
-}
-.image-3{
-    position: relative;
-    left:630px;
-    top: -428px;
+.photo-collection{
+    display:flex;
+    flex-flow:row;
+    position:relative;
+    top:0.7rem;
+    left:0.3rem;
+    height:166px;
+    width:100%;
+    width:95vw;
+    justify-content:space-evenly;
     
 }
-.image-4{
-    position: relative;
-    left:810px;
-    top: -615px;
-    
-}
-.image-5{
-    position: relative;
-    left:990px;
-    top: -800px;
-
 .testimonials{
     background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/06/2000-vadim_dodon-9901a20d968428349faae26e6b96e637.jpg);
     height:95vh;
@@ -679,7 +678,7 @@ footer {
 
 .left-arrow{
     position:relative;
-    left:-4.3rem;
+    left:-5.3rem;
     top:1.65rem;
     transition:0.4s;
 }
@@ -697,8 +696,8 @@ footer {
 }
 .photos{
     position:relative;
-    top:3.3rem;
-    left:-0.5rem;
+    top:-2.3rem;
+    /* left:-0.5rem; */
     border-bottom:1px solid white;
     padding-bottom:6.3px;
     display:inline-block;

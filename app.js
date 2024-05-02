@@ -111,3 +111,12 @@ window.addEventListener('scroll', () => {
       fadeInSection_4.classList.add('in-view');
     }
 });
+
+const fadeInSection_5 = document.querySelector('.fourthdiv');
+window.addEventListener('scroll', () => {
+    const rect = fadeInSection_5.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      fadeInSection_5.classList.add('in-view');
+    }
+});
