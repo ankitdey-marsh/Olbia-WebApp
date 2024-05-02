@@ -50,20 +50,22 @@ a{
 }
 .small-p{
     font-size:12px;
-    letter-spacing:1px;
+    letter-spacing:3px;
     color:#a2a2a3;
-    font-weight:700;
+    font-weight:light;
     position:relative;
-    top:1.28rem
+    top:1.28rem;
+    font-family:Asul;
 }
 .middiv-p{
     color:black;
     position:relative;
     display:inline-block;
     top:0.8rem; 
-    font-size:0.37rem;
-    font-weight:600;
+    font-size:0.33rem;
+    font-weight:light;
     transform:scaleY(0.9);
+    letter-spacing:2px;
 }
 .secondtopdiv{
     position:relative;
@@ -79,10 +81,11 @@ a{
 }
 .Olbia-description{
     position:relative;
-    top:0.6rem;
+    top:0.8rem;
     margin: 0 auto;
     width:61.51%;
     text-align:center;
+    line-height:0.27rem;
 }
 .Olbia-desc{   
     font-family:Roboto;
@@ -95,14 +98,15 @@ a{
 .aboutme-btn{
     text-decoration:none;
     font-family:Roboto;
-    font-size:12px;
-    letter-spacing:1.2px;
+    font-size:13px;
+    letter-spacing:3px;
     position:relative;
-    top:-15px;
+    top:30px;
+    opacity:0.9;
     color:black;
-    font-weight:500;
+    font-weight:400;
     border-bottom: thin solid #a2a2a3;
-    padding-bottom:4px;
+    padding-bottom:6px;
     transition-duration: 0.4s;
 }
 .aboutme-btn:hover
