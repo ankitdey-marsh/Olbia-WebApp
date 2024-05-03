@@ -834,3 +834,87 @@ footer {
     top:-1.4rem;
     left:1.2rem;
 }
+.call-text {
+    font-family: Asul;
+    font-size: 0.11rem;
+    letter-spacing: 3px;
+    color: #9b9bb2;
+    height: 35px;
+    font-weight: 500;
+}
+.how-contact{
+    color: black;
+}
+.call-me{
+    font-size: 0.11rem;
+    letter-spacing: 3px;
+}
+.email-text{
+    font-family: Cardo;
+    font-size: 0.11rem;
+    letter-spacing: 3px;
+    color: #9b9bb2;
+    height: 35px;
+    font-weight: 500;
+}
+.social-text{
+    font-family: Cardo;
+    font-size: 0.11rem;
+    letter-spacing: 3px;
+    color: #9b9bb2;
+    height: 35px;
+}
+.contact-forms{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+}
+.call{
+    width:370px;
+    text-align: center;
+    border-right: solid thin #dcdcdb;
+    justify-content: center;
+    padding: 15px;
+    
+}
+.email{
+    width:370px;
+    text-align: center;
+    border-right: solid thin #dcdcdb;
+    border-width: 0.05px;
+    padding: 15px;
+}
+.social{
+    width:370px;
+    text-align: center;
+    padding: 15px;
+}
+.button-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.fb-2{
+    width: 20px;
+}
+.insta-2{
+    width: 55px;
+}
+.x-2{
+    width: 20px;
+}
+.fb-2:hover{
+    opacity:0.5;
+}
+.insta-2:hover{
+    opacity:0.5;
+}
+.x-2:hover{
+    opacity:0.5;
+}
+.call-me:hover {
+    opacity:0.5;
+}
