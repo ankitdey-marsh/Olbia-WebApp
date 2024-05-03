@@ -811,3 +811,26 @@ footer {
 .not-hidden{
     display:block;
 }
+.letsconnect{
+    position:relative;
+    display:inline-block;
+    top:0.4rem;  
+    font-size:0.37rem;
+    font-family:Cardo;
+    left:4.65rem;
+    letter-spacing:2.5px;
+    color:white;
+}
+.contact-info{
+    height:140vh;
+    background-color:#F5F5F4;
+
+}
+.sendamessage{
+    width:80%;
+    background-color:white;
+    height:110vh;
+    position:relative;
+    top:-1.4rem;
+    left:1.2rem;
+}
