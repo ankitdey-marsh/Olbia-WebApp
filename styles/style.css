@@ -877,7 +877,16 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    height: 100px;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility;  
+}
+.contact-forms.in-view{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 .call{
     width:370px;
@@ -923,8 +932,12 @@ footer {
     opacity:0.5;
 }
 .x-2{
+    position:relative;
+    top:-1px;
+    left:-3px;
     transition:0.5s;
-    width: 20px;
+    transform:scale(0.9);
+    width: 25px;
 }
 .x-2:hover{
     opacity:0.5;
@@ -933,10 +946,50 @@ footer {
     opacity:0.5;
 }
 
+.sendmessagetext{
+    padding-top:1rem;
+    text-align:center;
+    font-size:24px;
+    font-family:Cardo;
+    letter-spacing:2.8px;
+}
 
-
-
-
+.name2{
+    background-color:white;
+    font-family:Roboto;
+    letter-spacing:2px;
+    position:relative;
+    left:1.4rem;
+    font-size:14px;
+    max-height:25px;
+    width:21%;
+    top:-0.16rem;
+    outline: none;
+    box-shadow: none;
+    border:none;
+    padding-right:20px;
+    border-bottom:1px solid rgba(156, 156, 156, 0.54);
+    padding-bottom:16px;
+}
+.mytextfield{
+    top:0.1rem;
+    display:block;
+    padding-bottom:1.2rem;
+    width:71%;
+}
+textarea{
+    resize:vertical
+}
+.sub2{
+    left:4rem;
+    display:block;
+    background-color:white;
+    top:0.55rem;
+    height:0.6rem;
+}
+.sub-btn-txt{
+    line-height:17px;
+}
 
 
 

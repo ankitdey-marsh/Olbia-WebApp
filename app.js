@@ -1,3 +1,6 @@
+
+
+
 const button1 = document.getElementsByClassName('weddings-btn')[0];
 const button2 = document.getElementsByClassName('engagements-btn')[0];
 const button3 = document.getElementsByClassName('couples-btn')[0];
@@ -112,6 +115,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
+//fade in for fourthdiv
+
 const fadeInSection_5 = document.querySelector('.fourthdiv');
 window.addEventListener('scroll', () => {
     const rect = fadeInSection_5.getBoundingClientRect();
@@ -120,6 +125,19 @@ window.addEventListener('scroll', () => {
       fadeInSection_5.classList.add('in-view');
     }
 });
+
+//fade in for contact-form/contact-page
+
+const fadeInSection_6 = document.querySelector('.contact-forms');
+window.addEventListener('scroll', () => {
+    const rect = fadeInSection_6.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+    if (isInView) {
+      fadeInSection_6.classList.add('in-view');
+    }
+});
+
 
 
 
@@ -188,5 +206,38 @@ window.addEventListener('scroll', () => {
   const containerHeight = backgroundContainer.offsetHeight;
   const newPosition = (scrollPosition / containerHeight) * 20 ;
   backgroundContainer.style.backgroundPositionY = `${newPosition+50}%`;
+});
+
+
+
+//info fetch from contact
+
+const anchorTag = document.querySelector('.sub2btn');
+
+anchorTag.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const nameInput = document.querySelector('input[name="name"]');
+  const emailInput = document.querySelector('.FromMail');
+  const subjectInput = document.querySelector('input[name="subject"]');
+  const messageTextarea = document.querySelector('textarea[name="text"]');
+
+  const name = nameInput.value;
+  const email = emailInput.value;
+  const subject = subjectInput.value;
+  const message = messageTextarea.value;
+  console.log(`Name: ${name}, Email: ${email}, Subject: ${subject}, Message: ${message}`);
+  emailjs.send('service_o41q0o3', 'template_611r1lg', {
+    name: name,
+    email: email,
+    subject: subject,
+    message: message
+  })
+  .then((response) => {
+    console.log('Email sent successfully!', response.status, response.text);
+  })
+  .catch((error) => {
+    console.log('Error sending email:', error);
+  });
 });
 

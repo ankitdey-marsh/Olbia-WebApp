@@ -253,7 +253,21 @@
         </div>
         <div class="contact-info">
             <div class="sendamessage">
-                <p class=""></p>
+                <p class="sendmessagetext">SEND A MESSAGE</p>
+                <div class="email-field">
+                    <input type="name" class="name2" name="name" placeholder="Name">
+                    <input type="email" class="name2 FromMail" name="email" placeholder="Email">
+                    <input type="subject" class="name2" name="subject" placeholder="Subject">
+                    <textarea type="text" class="name2 mytextfield" name="text" rows="50" cols="50" placeholder="Message"></textarea>
+                    <a href="#email-field" class="subscribe-btn sub2btn">
+                        <div class="subscribe-btn-text sub2">
+                            <p class="sub-btn-txt">
+                                SEND MESSAGE
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
             </div>
             <div class="contact-forms">
                 <div class="call">
@@ -409,5 +423,9 @@
         </div>
     </footer>  
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('gudxeR2QWHm0rHItI');
+      </script>
 </body>
 </html>
