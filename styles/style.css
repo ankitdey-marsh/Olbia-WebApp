@@ -846,8 +846,10 @@ footer {
     color: black;
 }
 .call-me{
-    font-size: 0.11rem;
+    font-size: 0.12rem;
+    font-weight:500;
     letter-spacing: 3px;
+    transition:0.4s;
 }
 .email-text{
     font-family: Cardo;
@@ -858,11 +860,13 @@ footer {
     font-weight: 500;
 }
 .social-text{
+    position:relative;
+    top:-5px;
     font-family: Cardo;
     font-size: 0.11rem;
     letter-spacing: 3px;
     color: #9b9bb2;
-    height: 35px;
+    height: 30px;
 }
 .contact-forms{
     display:flex;
@@ -895,22 +899,28 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position:relative;
+    top:-5px;
     align-content: center;
 }
 .fb-2{
     width: 20px;
-}
-.insta-2{
-    width: 55px;
-}
-.x-2{
-    width: 20px;
+    transition:0.5s;
 }
 .fb-2:hover{
     opacity:0.5;
 }
+.insta-2{
+    width: 55px;
+    transition:0.5s;
+}
 .insta-2:hover{
+    
     opacity:0.5;
+}
+.x-2{
+    transition:0.5s;
+    width: 20px;
 }
 .x-2:hover{
     opacity:0.5;

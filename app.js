@@ -145,6 +145,18 @@ contactButton.addEventListener('click', () => {
   image_container.classList.add('not-hidden');
   contact_page.classList.add('not-hidden');
 });
+const home_page = document.querySelector('.home');
+home_page.addEventListener('click', () => {
+  topdiv.classList.remove('hidden');
+  navbar.style.color='white';
+  secondtopdiv.classList.remove('hidden');
+  thirddiv.classList.remove('hidden');
+  testimonials.classList.remove('hidden');
+  fourthdiv.classList.remove('hidden');
+  lastdiv.classList.remove('hidden');
+  image_container.classList.remove('not-hidden');
+  contact_page.classList.remove('not-hidden');
+});
 
 
 const backgroundContainer = document.querySelector('.image-container');
