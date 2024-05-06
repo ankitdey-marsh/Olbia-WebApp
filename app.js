@@ -132,8 +132,12 @@ const thirddiv = document.querySelector('.thirddiv');
 const testimonials = document.querySelector('.testimonials');
 const fourthdiv = document.querySelector('.fourthdiv');
 const lastdiv = document.querySelector('.lastdiv');
+const blog_pg = document.querySelector('.blog-page');
 const image_container = document.querySelector('.image-container');
 const contact_page = document.querySelector('.contact-page');
+console.log(blog_pg);
+
+
 contactButton.addEventListener('click', () => {
   topdiv.classList.add('hidden');
   navbar.style.color='black';
@@ -143,8 +147,25 @@ contactButton.addEventListener('click', () => {
   fourthdiv.classList.add('hidden');
   lastdiv.classList.add('hidden');
   image_container.classList.add('not-hidden');
+  blog_pg.classList.remove('not-hidden');
   contact_page.classList.add('not-hidden');
 });
+
+//load blog page
+const blog_page = document.querySelector('.blog');
+blog_page.addEventListener('click', () => {
+  topdiv.classList.add('hidden');
+  navbar.style.color='black';
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  blog_pg.classList.add('not-hidden');
+  contact_page.classList.remove('not-hidden');
+});
+
+//load home page
 const home_page = document.querySelector('.home');
 home_page.addEventListener('click', () => {
   topdiv.classList.remove('hidden');
@@ -156,9 +177,10 @@ home_page.addEventListener('click', () => {
   lastdiv.classList.remove('hidden');
   image_container.classList.remove('not-hidden');
   contact_page.classList.remove('not-hidden');
+  blog_pg.classList.remove('not-hidden');
 });
 
-
+//contact page scroll effect on image
 const backgroundContainer = document.querySelector('.image-container');
 
 window.addEventListener('scroll', () => {
@@ -167,3 +189,4 @@ window.addEventListener('scroll', () => {
   const newPosition = (scrollPosition / containerHeight) * 20 ;
   backgroundContainer.style.backgroundPositionY = `${newPosition+50}%`;
 });
+
