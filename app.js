@@ -142,7 +142,11 @@ window.addEventListener('scroll', () => {
 
 
 //contact page load
+const tick1=document.querySelector('.tick');
+const tick2=document.querySelector('.tick2');
 const contactButton = document.querySelector('.contact');
+const portfolioButton = document.querySelector('.portfolio');
+const pagesButton = document.querySelector('.pagestab');
 const navbar = document.querySelector('.nav-olbia');
 const topdiv = document.querySelector('.topdiv');
 const secondtopdiv = document.querySelector('.secondtopdiv');
@@ -153,8 +157,11 @@ const lastdiv = document.querySelector('.lastdiv');
 const blog_pg = document.querySelector('.blog-page');
 const image_container = document.querySelector('.image-container');
 const contact_page = document.querySelector('.contact-page');
-console.log(blog_pg);
-
+const portfolio_page = document.querySelector('.portfolio-page');
+const pages_page = document.querySelector('.pages-page');
+const home_page = document.querySelector('.home');
+const blog_page = document.querySelector('.blog');
+const backgroundContainer = document.querySelector('.image-container');
 
 contactButton.addEventListener('click', () => {
   topdiv.classList.add('hidden');
@@ -167,10 +174,14 @@ contactButton.addEventListener('click', () => {
   image_container.classList.add('not-hidden');
   blog_pg.classList.remove('not-hidden');
   contact_page.classList.add('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  portfolio_page.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
 });
 
 //load blog page
-const blog_page = document.querySelector('.blog');
+
 blog_page.addEventListener('click', () => {
   topdiv.classList.add('hidden');
   navbar.style.color='black';
@@ -181,10 +192,14 @@ blog_page.addEventListener('click', () => {
   lastdiv.classList.add('hidden');
   blog_pg.classList.add('not-hidden');
   contact_page.classList.remove('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  portfolio_page.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
 });
 
 //load home page
-const home_page = document.querySelector('.home');
+
 home_page.addEventListener('click', () => {
   topdiv.classList.remove('hidden');
   navbar.style.color='white';
@@ -196,10 +211,51 @@ home_page.addEventListener('click', () => {
   image_container.classList.remove('not-hidden');
   contact_page.classList.remove('not-hidden');
   blog_pg.classList.remove('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  portfolio_page.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
+});
+
+//load portfolio page
+portfolioButton.addEventListener('click', () => {
+  topdiv.classList.add('hidden');
+  navbar.style.color='black';
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  portfolio_page.classList.add('not-hidden');
+  image_container.classList.remove('not-hidden');
+  contact_page.classList.remove('not-hidden');
+  blog_pg.classList.remove('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
+
+});
+
+//load pages page
+pagesButton.addEventListener('click', () => {
+  topdiv.classList.add('hidden');
+  navbar.style.color='black';
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  portfolio_page.classList.remove('not-hidden');
+  image_container.classList.remove('not-hidden');
+  contact_page.classList.remove('not-hidden');
+  blog_pg.classList.remove('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  pages_page.classList.add('not-hidden');
 });
 
 //contact page scroll effect on image
-const backgroundContainer = document.querySelector('.image-container');
+
 
 window.addEventListener('scroll', () => {
   const scrollPosition = window.pageYOffset;
@@ -207,12 +263,28 @@ window.addEventListener('scroll', () => {
   const newPosition = (scrollPosition / containerHeight) * 20 ;
   backgroundContainer.style.backgroundPositionY = `${newPosition+50}%`;
 });
+let timeoutId;
+const selectElement=document.querySelector('.welcometext');
+const hoverElement = document.querySelector('.welcome');
+hoverElement.addEventListener('mouseenter', () => {
+  selectElement.classList.add('in-view');
+});
+hoverElement.addEventListener('mouseout', () => {
+  timeoutId = setTimeout(() => {
+    selectElement.classList.remove('in-view');
+  }, 700);
+});
+hoverElement.addEventListener('mouseover', () => {
+  clearTimeout(timeoutId);
+});
 
 
 
 //info fetch from contact
 
-const anchorTag = document.querySelector('.sub2btn');
+function sendmsg(){
+  const anchorTag = document.querySelector('.sub2btn');
+
 
 anchorTag.addEventListener('click', (e) => {
   e.preventDefault();
@@ -235,9 +307,43 @@ anchorTag.addEventListener('click', (e) => {
   })
   .then((response) => {
     console.log('Email sent successfully!', response.status, response.text);
+    nameInput.value = '';
+    emailInput.value = '';
+    subjectInput.value = '';
+    messageTextarea.value = '';
+    tick2.classList.add('not-hidden');
   })
   .catch((error) => {
     console.log('Error sending email:', error);
   });
 });
+}
+sendmsg();
+//for newsletter
+
+function newsletter() {
+  const anchorTag2 = document.querySelector('.sub1btn');
+
+
+anchorTag2.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const emailInput = document.querySelector('#email');
+
+  const email = emailInput.value;
+  emailjs.send('service_o41q0o3', 'template_xx2yylg', {
+    email: email
+  })
+  .then((response) => {
+    console.log('Email sent successfully!', response.status, response.text);
+    tick1.classList.add('not-hidden');
+    emailInput.value = '';
+  })
+  .catch((error) => {
+    console.log('Error sending email:', error);
+  });
+});
+  
+}
+newsletter();
 

@@ -25,7 +25,7 @@ a{
 
 .navbar{
     position:relative;
-    left:2.4rem;
+    left:2.33rem;
     height:1rem;
     width:65vw;
     position:absolute;
@@ -46,6 +46,7 @@ a{
 .nav-elements-text-p{
     font-size:13px;
     font-family:Asul;
+    font-weight:bold;
     color:#524C42;
     letter-spacing:3px;
     transition:0.4s;
@@ -562,7 +563,26 @@ footer {
     font-size:12px;
     letter-spacing:2px;
     color: black;
-    transform:translateY(125%);
+    transform:translateY(107%);
+
+}
+.sbt2{
+    position:relative;
+    top:0.05rem;
+}
+.tick{
+    width:20px;
+    position:absolute;
+    left:12.3rem;
+    top:26.91rem;
+    display:none;
+}
+.tick2{
+    width:20px;
+    position:absolute;
+    left:6.45rem;
+    top:4.72rem;
+    display:none;
 }
 .fourth-outer-div{
     color: #ffffff;
@@ -989,6 +1009,51 @@ textarea{
 }
 .sub-btn-txt{
     line-height:17px;
+}
+.portfolio-page{
+    height:250vh;
+    background-color:#f5f5f4;
+    display:none;
+}
+.pages-page{
+    height:250vh;
+    background-color:#f5f5f4;
+    display:none;
+}
+.welcometext{
+    position:absolute;
+    top:0.7rem;
+    left:8.57rem;
+    height:1rem;
+    width:3rem;
+    background-color:rgb(245, 245, 244,0.7);
+    mask-image: linear-gradient(to bottom, opaque 0%, black 100%);
+    mask-mode: alpha;
+    border-radius:15px;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%); */
+    z-index:10;
+    opacity: 0;
+    transform: translateY(0);
+    visibility: hidden;
+    transition: opacity 0.8s ease-out, transform 0.4s ease-out;
+    will-change: opacity, visibility;
+}
+.welcometext.in-view{
+    opacity: 1;
+    transform: translateY(5vh);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    visibility: visible;
+}
+.welcometext.out-view{
+    opacity: 0;
+    transform: none;
+    visibility: hidden;
+}
+.nap{
+    font-size:15px;
+    position:relative;
+    top:0.42rem;
+    left:0.5rem;
 }
 
 
