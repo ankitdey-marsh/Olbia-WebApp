@@ -685,7 +685,7 @@ footer {
     display: block;
 }
 .blog-page{
-    height:300vh;
+    height:500vh;
     background-color:#f5f5f4;
     display:none;
 }
@@ -932,8 +932,546 @@ footer {
 .call-me:hover {
     opacity:0.5;
 }
+.blog-page-div{
+    background-color: #FFFFFF;
+    height: 100px;
+}
+.latest{
+    background-color: #F5F5F4;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.text-top{
+    font: Asul;
+    letter-spacing: 4px;
+    padding: 90px;
+    position: relative; 
+    top: -50px;
+    left: -30px;  
+}
+.story-text{
+    font-size: 0.36rem;
+    width: 4.8rem;
+
+}
+.text-1-in{
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 1rem;
+}
+.text-2-in{
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1rem;
+    text-align: center;
+}
+.text-3-in{
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1.8rem;
+    text-align: center;
+
+}
+.text-4-in{
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1rem;
+    text-align: center;
+}
+.link-top {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    width: 4rem;
+    padding: 0.5rem;
+    position: relative;
+}
+.text-blog2{
+    font-size: 0.3rem;
+}
+.charming-image{
+    height: 400px;
+}
+.date {
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1.3rem;
+    text-align: center;  
+    position: relative;
+    left: -1rem; 
+}
+.info {
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1rem;
+    text-align: center; 
+    position: relative;
+    left: -1rem;
+
+}
+/* .dot{
+    font:Asul;
+    font-size: 30px;
+    color: #a2a2a3;
+    position: relative;
+    top: -22px;
+    left: -103px;
+} */
+.info-date1{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    text-align: center;
+    height: 0.35rem;
+    position: relative;
+}
 
 
+.default-text {
+    font:Cardo;
+    color: #4a4a4a;
+    font-size: 0.15rem;
+    width:500px;
+    text-align: center;
+    height:100px;
+    padding: 16px;
+    position: relative;
+    right: 15px;
+}
+.wed-text{
+    font-size: 0.3rem;
+    font: Asul;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 400px;
+}
+.charming-btn{
+    width:1.8rem;
+    height:0.5rem;
+    background-color:#FFFFFF;
+    position:relative;
+    border:1px solid black;
+    transition:0.2s;
+    left: 0.4rem;
+    top: -0.4rem;
+}
+
+.read-text{
+    font-family:Asul;
+    font-size:12px;
+    letter-spacing:2px;
+    color: black;
+    transform:translateY(125%);
+    text-align:center;
+}
+.charming1{
+    background-color: white;
+    position: relative;
+    top: -1rem;
+    height: 400px;
+    margin: 0 75px;
+}
+.charming1-text{
+    position:relative;
+    left: 7rem;
+    top: -3.2rem;
+}
+.default-charming{
+    position: relative;
+    left: -1.2rem;
+}
+.wedding-text{
+    position: relative;
+    left: -1rem;
+
+}
+.info-date1{
+    position: relative;
+    left: 1rem;
+}
+.cactus{
+    background-color: white;
+    position: relative;
+    top: -0.65rem;
+    height: 400px;
+    margin: 0 75px;
+}
+.cactus-image{
+    height: 400px;
+    position: relative;
+    left: 5.8rem;
+    width: 5.5rem;
+}
+.cactus-btn{
+    width:1.8rem;
+    height:0.5rem;
+    background-color:#FFFFFF;
+    position:relative;
+    border:1px solid black;
+    transition:0.2s;
+    left: 0.4rem;
+    top: -0.4rem;
+}
+
+.read-text-cac{
+    font-family:Asul;
+    font-size:12px;
+    letter-spacing:2px;
+    color: black;
+    transform:translateY(125%);
+    text-align:center;
+}
+.info-date2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    top: -3.5rem;
+    left: 2.5rem;
+}
+.cac-text{
+    font-size: 0.3rem;
+    font: Asul;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 400px;
+}
+.cactus-text{
+    position: relative;
+    top: -3.3rem;
+    left: 0.8rem;
+}
+.default-text-c {
+    font:Cardo;
+    color: #4a4a4a;
+    font-size: 0.15rem;
+    width:500px;
+    text-align: center;
+    height:100px;
+    padding: 16px;
+    position: relative;
+    right: 15px;
+}
+.default-cactus{
+    position: relative;
+    top: -3.2rem;
+    left: 0.5rem;
+}
+.cactus-btn{
+    position: relative;
+    top: -3.6rem;
+    left: 2rem;
+}
+.happiness{
+    background-color: white;
+    position: relative;
+    top: -0.3rem;
+    height: 400px;
+    margin: 0 75px;
+}
+.fluffy-image{
+    height: 400px;
+    width: 600px;
+}
+.date-f {
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1.3rem;
+    text-align: center;  
+    position: relative;
+    
+}
+.info-f {
+    font-size: 0.12rem;
+    font-family: Asul;
+    color: #a2a2a3;
+    letter-spacing: 2.5px;
+    width:1rem;
+    text-align: center; 
+    position: relative;
+}
+.info-date3{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    left: 7.5rem;
+    top: -3.5rem;
+}
+.hap-text{
+    font-size: 0.3rem;
+    font: Asul;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 400px;
+}
+.happiness-text{
+    position: relative;
+    top: -3.25rem;
+    left: 6.66rem;
+}
+.default-text-f {
+    font:Cardo;
+    color: #4a4a4a;
+    font-size: 0.15rem;
+    width:500px;
+    text-align: center;
+    height:100px;
+    padding: 16px;
+    position: relative;
+    right: 15px;
+}
+.default-fluffy {
+    position: relative;
+    top:-3rem;
+    left: 6.23rem;
+}
+
+.fluffy-btn{
+    width:1.8rem;
+    height:0.5rem;
+    background-color:#FFFFFF;
+    position:relative;
+    border:1px solid black;
+    transition:0.2s;
+    left: 0.4rem;
+    top: -0.4rem;
+}
+
+.read-text-fluffy{
+    font-family:Asul;
+    font-size:12px;
+    letter-spacing:2px;
+    color: black;
+    transform:translateY(125%);
+    text-align:center;    
+}
+.fluffy-btn{
+    top: -3.5rem;
+    left: 7.8rem;
+}
+.braies{
+    background-color: white;
+    position: relative;
+    bottom: -0.1rem;
+    height: 400px;
+    margin: 0 75px;
+}
+.lago-image{
+    height: 400px;
+    width: 550px;
+    position: relative;
+    left: 5.79rem;
+}
+.info-date4{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -3.3rem;
+    left: 1.8rem;
+}
+.default-text-l {
+    font:Cardo;
+    color: #4a4a4a;
+    font-size: 0.15rem;
+    width:500px;
+    text-align: center;
+    height:100px;
+    padding: 16px;
+    position: relative;
+    right: 15px;
+}
+.lag-text{
+    font-size: 0.3rem;
+    font: Asul;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 400px;
+}
+.braise-text{
+    position: relative;
+    top: -3rem;
+    left: 0.9rem;
+}
+.default-lago{
+    position: relative;
+    top: -2.8rem;
+    left: 0.4rem;
+}
+.lago-btn{
+    width:1.8rem;
+    height:0.5rem;
+    background-color:#FFFFFF;
+    position:relative;
+    border:1px solid black;
+    transition:0.2s;
+    left: 0.4rem;
+    top: -0.4rem;
+}
+.read-text-lago{
+    font-family:Asul;
+    font-size:12px;
+    letter-spacing:2px;
+    color: black;
+    transform:translateY(125%);
+    text-align:center;    
+}
+.lago-btn{
+    position: relative;
+    top: -3.3rem;
+    left: 1.9rem;
+}
+.smile{
+    background-color: white;
+    position: relative;
+    top: 0.5rem;
+    height: 400px;
+    margin: 0 75px;
+}
+.smile-image{
+    height: 400px;
+    width: 570px;
+}
+.info-date5{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    top:-3.1rem;
+    left: 7rem;
+}
+.default-text-s {
+    font:Cardo;
+    color: #4a4a4a;
+    font-size: 0.15rem;
+    width:500px;
+    text-align: center;
+    height:100px;
+    padding: 16px;
+    position: relative;
+    right: 15px;
+}
+.doub-text{
+    font-size: 0.3rem;
+    font: Asul;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 400px;
+}
+.smile-btn{
+    width:1.8rem;
+    height:0.5rem;
+    background-color:#FFFFFF;
+    position:relative;
+    border:1px solid black;
+    transition:0.2s;
+    left: 0.4rem;
+    top: -0.4rem;
+}
+.read-text-smile{
+    font-family:Asul;
+    font-size:12px;
+    letter-spacing:2px;
+    color: black;
+    transform:translateY(125%);
+    text-align:center;    
+}
+.double-text{
+    position: relative;
+    top:-2.8rem;
+    left: 6.2rem;
+}
+.default-smile{
+    position: relative;
+    top:-2.8rem;
+    left: 6rem;
+}
+.smile-btn{
+    position: relative;
+    top:-3.2rem;
+    left: 7.4rem;
+
+}
+.italy{
+    background-color: white;
+    position: relative;
+    top: 0.9rem;
+    height: 400px;
+    margin: 0 75px;
+}
+.italy-image{
+    height: 400px;
+    width: 570px;
+    position: relative;
+    left: 5.6rem;
+}
+.info-date6{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:-0.3rem;
+    left: 0.8rem;
+}
+.default-text-i {
+    font:Cardo;
+    color: #4a4a4a;
+    font-size: 0.15rem;
+    width:500px;
+    text-align: center;
+    height:100px;
+    padding: 16px;
+    position: relative;
+    right: 15px;
+}
+.ita-text{
+    font-size: 0.3rem;
+    font: Asul;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 400px;
+}
+.italy-btn{
+    width:1.8rem;
+    height:0.5rem;
+    background-color:#FFFFFF;
+    position:relative;
+    border:1px solid black;
+    transition:0.2s;
+    left: 0.4rem;
+    top: -0.4rem;
+}
+.read-text-italy{
+    font-family:Asul;
+    font-size:12px;
+    letter-spacing:2px;
+    color: black;
+    transform:translateY(125%);
+    text-align:center;    
+}
+.italy-text{
+    position: relative;
+    top: -3rem;
+    left: 0.5rem;
+}
+.italy-btn{
+    position: relative;
+    left: 1rem;
+}
 
 
 
