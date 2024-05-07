@@ -156,6 +156,7 @@ const fourthdiv = document.querySelector('.fourthdiv');
 const lastdiv = document.querySelector('.lastdiv');
 const blog_pg = document.querySelector('.blog-page');
 const image_container = document.querySelector('.image-container');
+const image_container2 = document.querySelector('.image-container_2');
 const contact_page = document.querySelector('.contact-page');
 const portfolio_page = document.querySelector('.portfolio-page');
 const pages_page = document.querySelector('.pages-page');
@@ -163,6 +164,7 @@ const home_page = document.querySelector('.home');
 const blog_page = document.querySelector('.blog');
 const backgroundContainer = document.querySelector('.image-container');
 
+//contact page load
 contactButton.addEventListener('click', () => {
   topdiv.classList.add('hidden');
   navbar.style.color='black';
@@ -178,6 +180,7 @@ contactButton.addEventListener('click', () => {
   tick2.classList.remove('not-hidden');
   portfolio_page.classList.remove('not-hidden');
   pages_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
 });
 
 //load blog page
@@ -195,6 +198,7 @@ blog_page.addEventListener('click', () => {
   tick1.classList.remove('not-hidden');
   tick2.classList.remove('not-hidden');
   portfolio_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
   pages_page.classList.remove('not-hidden');
 });
 
@@ -214,6 +218,7 @@ home_page.addEventListener('click', () => {
   tick1.classList.remove('not-hidden');
   tick2.classList.remove('not-hidden');
   portfolio_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
   pages_page.classList.remove('not-hidden');
 });
 
@@ -233,6 +238,7 @@ portfolioButton.addEventListener('click', () => {
   tick1.classList.remove('not-hidden');
   tick2.classList.remove('not-hidden');
   pages_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
 
 });
 
@@ -251,6 +257,7 @@ pagesButton.addEventListener('click', () => {
   blog_pg.classList.remove('not-hidden');
   tick1.classList.remove('not-hidden');
   tick2.classList.remove('not-hidden');
+  image_container2.classList.add('not-hidden');
   pages_page.classList.add('not-hidden');
 });
 
@@ -263,6 +270,16 @@ window.addEventListener('scroll', () => {
   const newPosition = (scrollPosition / containerHeight) * 20 ;
   backgroundContainer.style.backgroundPositionY = `${newPosition+50}%`;
 });
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.pageYOffset;
+  const containerHeight = image_container2.offsetHeight;
+  const newPosition = (scrollPosition / containerHeight) * 20 ;
+  image_container2.style.backgroundPositionY = `${newPosition+50}%`;
+});
+
+
+//welcome text on navbar
 let timeoutId;
 const selectElement=document.querySelector('.welcometext');
 const hoverElement = document.querySelector('.welcome');

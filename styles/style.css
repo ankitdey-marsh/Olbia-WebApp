@@ -834,6 +834,16 @@ footer {
     display:none;
     position:relative;
 }
+.image-container_2{
+    height:70vh;
+    width:100%;
+    background-image: url("C:/Coding/Own/Olbia-WebApp/olbia/pages_img.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:100%;
+    display:none;
+    position:relative;
+}
 
 .letsconnect{
     position:relative;
@@ -849,6 +859,10 @@ footer {
     height:140vh;
     background-color:#F5F5F4;
 
+}
+.pages-info{
+    height:200vh;
+    background-color:#F5F5F4;
 }
 .sendamessage{
     width:80%;
@@ -1016,7 +1030,7 @@ textarea{
     display:none;
 }
 .pages-page{
-    height:250vh;
+    height:350vh;
     background-color:#f5f5f4;
     display:none;
 }
