@@ -409,3 +409,25 @@ anchorTag2.addEventListener('click', (e) => {
 }
 newsletter();
 
+
+
+
+
+
+const navbar2 = document.querySelector('.navbar');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+  const currentScrollTop = window.pageYOffset;
+
+  if (currentScrollTop > lastScrollTop) {
+    // Scrolling down
+    navbar2.classList.add('scrolled');
+  } else {
+    // Scrolling up
+    navbar2.classList.remove('scrolled');
+  }
+
+  lastScrollTop = currentScrollTop;
+});
+

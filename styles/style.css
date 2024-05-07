@@ -24,16 +24,19 @@ a{
   
 
 .navbar{
-    position:relative;
     left:2.33rem;
     height:1rem;
     width:65vw;
-    position:absolute;
+    position:fixed;
     z-index:5;
     /* background-color:black; */
     display:flex;
     justify-content:space-around;
+    transition:1s;
 }
+.scrolled {
+    transform: translateY(-3rem);
+  }
 .nav-elements{
     height:0;
 }
