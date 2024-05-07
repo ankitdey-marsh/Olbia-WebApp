@@ -1030,7 +1030,7 @@ textarea{
     display:none;
 }
 .pages-page{
-    height:350vh;
+    height:400vh;
     background-color:#f5f5f4;
     display:none;
 }
@@ -1176,8 +1176,87 @@ textarea{
     background-position: center;
     background-image:url(https://olbia.wphunters.com/wp-content/uploads/2020/09/partner-logo4.png);
 }
+.travelandtext{
+    height:5rem;
+    position:relative;
+    top:1.5rem;
+    display:flex;
+    justify-content:space-evenly;
+}
+.travel_dates{
+    position:relative;
+    background-color:white;
+    height:5.35rem;
+    width:5.65rem;
+    left:0.1rem;
+}
+.text_tab{
+    position:relative;
+    background-color:white;
+    height:5.35rem;
+    width:5.65rem;
+    left:-0.1rem;
+}
+.tdatestxt{
+    font-size:0.31rem;
+    font-weight:200;
+    position:relative;
+    left:1.42rem;
+    top:0.25rem;
+    text-align:center;
+}
+.tdates{
+    position:relative;
+    left:-0.77rem;
+    top:1rem;
+    display:inline;
 
-
+}
+.tloc{
+    position:relative;
+    left:1.02rem;
+    top:0.78rem;
+    font-size:18px;
+}
+.tdates2{
+    position:relative;
+    left:2.15rem;
+    top:0.18rem;
+    display:inline;
+}
+.tloc2{
+    position:relative;
+    left:1.03rem;
+    top:0;
+    font-size:18px;
+}
+.tdates3{
+    position:relative;
+    left:2.3rem;
+    top:-0.6rem;
+    display:inline;
+}
+.tloc3{
+    position:relative;
+    left:1.03rem;
+    top:-0.8rem;
+    font-size:18px;
+}
+.getnoti{
+    position:relative;
+    left:1.45rem;
+    top:0.25rem;
+}
+.notitext{
+    position:relative;
+    left:0.55rem;
+    top:0.45rem;
+}
+.subbtn{
+    position:relative;
+    top:1.7rem;
+    left:2.1rem;
+}
 
 
 

@@ -161,7 +161,8 @@ const image_container2 = document.querySelector('.image-container_2');
 const contact_page = document.querySelector('.contact-page');
 const portfolio_page = document.querySelector('.portfolio-page');
 const pages_page = document.querySelector('.pages-page');
-const home_page = document.querySelector('.home');
+const home_page = document.getElementsByClassName('home')[0];
+const home_page2 = document.getElementsByClassName('home')[1];
 const blog_page = document.querySelector('.blog');
 const backgroundContainer = document.querySelector('.image-container');
 
@@ -228,6 +229,25 @@ blog_page.addEventListener('click', () => {
 
 home_page.addEventListener('click', () => {
   window.scrollTo(0, 0);
+  topdiv.classList.remove('hidden');
+  navbar.style.color='white';
+  secondtopdiv.classList.remove('hidden');
+  thirddiv.classList.remove('hidden');
+  testimonials.classList.remove('hidden');
+  fourthdiv.classList.remove('hidden');
+  lastdiv.classList.remove('hidden');
+  image_container.classList.remove('not-hidden');
+  contact_page.classList.remove('not-hidden');
+  blog_pg.classList.remove('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  portfolio_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
+});
+
+home_page2.addEventListener('click', () => {
+  window.scrollTo(0, 2900);
   topdiv.classList.remove('hidden');
   navbar.style.color='white';
   secondtopdiv.classList.remove('hidden');
