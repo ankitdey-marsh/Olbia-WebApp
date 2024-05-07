@@ -1069,8 +1069,113 @@ textarea{
     top:0.42rem;
     left:0.5rem;
 }
+.rennamaison_about{
+    left:5.5rem;
+}
+.rennamaison{
+    width:90%;
+    display:flex;
+    background-color:white;
+    height:120vh;
+    position:relative;
+    top:-1.4rem;
+    left:0.66rem;
+    justify-content:space-around;
+}
+.rennaphoto{
+    position:relative;
+    width:400px;
+    height:500px;
+    background-image: url(https://olbia.wphunters.com/wp-content/uploads/2020/06/bio-pic@2x.jpg);
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    top:1.08rem;
+    left:0.6rem;
+}
+.sometext{
+    top:1.08rem;
+    position:relative;
+    width:400px;
+    height:500px;
+    /* background-color:grey; */
+    left:-0.6rem;
+}
+.wedph{
+    position:relative;
+    top:0.1rem;
+}
+.phname{
+    position:relative;
+    top:-0.45rem;
+}
+.phdesc{
+    font-size:14.7px;
+    width:83%;
+    line-height:25.5px;
+    position:relative;
+    top:-0.45rem;
+    color:#4a4a4a;
 
-
+}
+.phbtn{
+    width: 1.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    position: relative;
+    left:0;
+    top:-0.3rem;
+    border: 1px solid black;
+    transition: 0.2s;
+    text-align: center;
+}
+.asi{
+    position:relative;
+    top:-0.7rem;
+    left:5.5rem;
+}
+.asseenin_text{
+    height:40px;
+}
+.asseenin_logos{
+    display:flex;
+    position:relative;
+    top:50px;
+    height:320px;
+    justify-content:center;
+}
+.logo{
+    height:320px;
+    width:280px;
+}
+.logo1{
+    background-repeat: no-repeat;
+    border-right: thin solid rgb(64, 64, 64,0.2);
+    background-size:100%;
+    background-position: center;
+    background-image:url(https://olbia.wphunters.com/wp-content/uploads/2020/09/partner-logo1.png);
+}
+.logo2{
+    background-repeat: no-repeat;
+    background-size:100%;
+    border-right: thin solid rgb(64, 64, 64,0.2);
+    background-position: center;
+    background-image:url(https://olbia.wphunters.com/wp-content/uploads/2020/09/partner-logo2.png);
+}
+.logo3{
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    border-right: thin solid rgb(64, 64, 64,0.2);
+    background-image:url(https://olbia.wphunters.com/wp-content/uploads/2020/09/partner-logo3.png);
+}
+.logo4{
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    background-image:url(https://olbia.wphunters.com/wp-content/uploads/2020/09/partner-logo4.png);
+}
 
 
 

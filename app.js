@@ -144,7 +144,8 @@ window.addEventListener('scroll', () => {
 //contact page load
 const tick1=document.querySelector('.tick');
 const tick2=document.querySelector('.tick2');
-const contactButton = document.querySelector('.contact');
+const contactButton = document.getElementsByClassName('contact')[0];
+const contactButton2 = document.getElementsByClassName('contact')[1];
 const portfolioButton = document.querySelector('.portfolio');
 const pagesButton = document.querySelector('.pagestab');
 const navbar = document.querySelector('.nav-olbia');
@@ -166,6 +167,26 @@ const backgroundContainer = document.querySelector('.image-container');
 
 //contact page load
 contactButton.addEventListener('click', () => {
+  window.scrollTo(0, 0);
+  topdiv.classList.add('hidden');
+  navbar.style.color='black';
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  image_container.classList.add('not-hidden');
+  blog_pg.classList.remove('not-hidden');
+  contact_page.classList.add('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  portfolio_page.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
+});
+
+contactButton2.addEventListener('click', () => {
+  window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
   navbar.style.color='black';
   secondtopdiv.classList.add('hidden');
@@ -186,6 +207,7 @@ contactButton.addEventListener('click', () => {
 //load blog page
 
 blog_page.addEventListener('click', () => {
+  window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
   navbar.style.color='black';
   secondtopdiv.classList.add('hidden');
@@ -205,6 +227,7 @@ blog_page.addEventListener('click', () => {
 //load home page
 
 home_page.addEventListener('click', () => {
+  window.scrollTo(0, 0);
   topdiv.classList.remove('hidden');
   navbar.style.color='white';
   secondtopdiv.classList.remove('hidden');
@@ -224,6 +247,7 @@ home_page.addEventListener('click', () => {
 
 //load portfolio page
 portfolioButton.addEventListener('click', () => {
+  window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
   navbar.style.color='black';
   secondtopdiv.classList.add('hidden');
@@ -244,6 +268,7 @@ portfolioButton.addEventListener('click', () => {
 
 //load pages page
 pagesButton.addEventListener('click', () => {
+  window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
   navbar.style.color='black';
   secondtopdiv.classList.add('hidden');
