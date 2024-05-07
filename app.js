@@ -44,7 +44,8 @@ button3.addEventListener('click',()=>{
 });     
 
 
-
+const navbar2 = document.querySelector('.navbar');
+const text1=document.querySelector('.nav-olbia');
 
 //fade in animations for secondtopdiv
 const fadeInSection = document.querySelector('.secondtopdiv');
@@ -141,7 +142,6 @@ window.addEventListener('scroll', () => {
 
 
 
-//contact page load
 const tick1=document.querySelector('.tick');
 const tick2=document.querySelector('.tick2');
 const contactButton = document.getElementsByClassName('contact')[0];
@@ -170,7 +170,7 @@ const backgroundContainer = document.querySelector('.image-container');
 contactButton.addEventListener('click', () => {
   window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
-  navbar.style.color='black';
+  text1.classList.add('add_color');
   secondtopdiv.classList.add('hidden');
   thirddiv.classList.add('hidden');
   testimonials.classList.add('hidden');
@@ -189,7 +189,7 @@ contactButton.addEventListener('click', () => {
 contactButton2.addEventListener('click', () => {
   window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
-  navbar.style.color='black';
+  text1.classList.add('add_color');
   secondtopdiv.classList.add('hidden');
   thirddiv.classList.add('hidden');
   testimonials.classList.add('hidden');
@@ -210,7 +210,7 @@ contactButton2.addEventListener('click', () => {
 blog_page.addEventListener('click', () => {
   window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
-  navbar.style.color='black';
+  text1.classList.add('add_color');
   secondtopdiv.classList.add('hidden');
   thirddiv.classList.add('hidden');
   testimonials.classList.add('hidden');
@@ -230,7 +230,7 @@ blog_page.addEventListener('click', () => {
 home_page.addEventListener('click', () => {
   window.scrollTo(0, 0);
   topdiv.classList.remove('hidden');
-  navbar.style.color='white';
+  text1.classList.remove('add_color');
   secondtopdiv.classList.remove('hidden');
   thirddiv.classList.remove('hidden');
   testimonials.classList.remove('hidden');
@@ -249,7 +249,7 @@ home_page.addEventListener('click', () => {
 home_page2.addEventListener('click', () => {
   window.scrollTo(0, 2900);
   topdiv.classList.remove('hidden');
-  navbar.style.color='white';
+  text1.classList.remove('add_color');
   secondtopdiv.classList.remove('hidden');
   thirddiv.classList.remove('hidden');
   testimonials.classList.remove('hidden');
@@ -269,7 +269,7 @@ home_page2.addEventListener('click', () => {
 portfolioButton.addEventListener('click', () => {
   window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
-  navbar.style.color='black';
+  text1.classList.add('add_color');
   secondtopdiv.classList.add('hidden');
   thirddiv.classList.add('hidden');
   testimonials.classList.add('hidden');
@@ -290,7 +290,7 @@ portfolioButton.addEventListener('click', () => {
 pagesButton.addEventListener('click', () => {
   window.scrollTo(0, 0);
   topdiv.classList.add('hidden');
-  navbar.style.color='black';
+  text1.classList.add('add_color');
   secondtopdiv.classList.add('hidden');
   thirddiv.classList.add('hidden');
   testimonials.classList.add('hidden');
@@ -414,16 +414,30 @@ newsletter();
 
 
 
-const navbar2 = document.querySelector('.navbar');
+
+
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
   const currentScrollTop = window.pageYOffset;
-
   if (currentScrollTop > lastScrollTop) {
     // Scrolling down
     navbar2.classList.add('scrolled');
-  } else {
+    if(!topdiv.classList.contains('hidden')){
+    text1.classList.remove('add_color');}
+
+  }
+  else if(currentScrollTop>=500&&currentScrollTop<3500){
+    navbar2.classList.remove('scrolled');
+    if(!topdiv.classList.contains('hidden')){
+    text1.classList.add('add_color');}
+  }
+  else if(currentScrollTop<500){
+    if(!topdiv.classList.contains('hidden')){
+    text1.classList.remove('add_color');}
+    navbar2.classList.remove('scrolled');
+  }
+  else {
     // Scrolling up
     navbar2.classList.remove('scrolled');
   }
