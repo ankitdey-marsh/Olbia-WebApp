@@ -1,4 +1,4 @@
-# Wedding Website
+# Olbia
 A beautiful, aesthetic , laptop friendly wedding website.  
 _See [Olbia](http://wedding.rampatra.com/) for a preview._
 
