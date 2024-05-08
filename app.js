@@ -445,3 +445,31 @@ window.addEventListener('scroll', function() {
   lastScrollTop = currentScrollTop;
 });
 
+
+// Get all elements with the class "readmore"
+const readMoreButtons = document.querySelectorAll('.morestories');
+
+// Add an event listener to each button
+readMoreButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    gotosub();
+  });
+});
+function gotosub(){
+    window.scrollTo(0, 2900);
+    topdiv.classList.remove('hidden');
+    text1.classList.remove('add_color');
+    secondtopdiv.classList.remove('hidden');
+    thirddiv.classList.remove('hidden');
+    testimonials.classList.remove('hidden');
+    fourthdiv.classList.remove('hidden');
+    lastdiv.classList.remove('hidden');
+    image_container.classList.remove('not-hidden');
+    contact_page.classList.remove('not-hidden');
+    blog_pg.classList.remove('not-hidden');
+    tick1.classList.remove('not-hidden');
+    tick2.classList.remove('not-hidden');
+    portfolio_page.classList.remove('not-hidden');
+    image_container2.classList.remove('not-hidden');
+    pages_page.classList.remove('not-hidden');
+}

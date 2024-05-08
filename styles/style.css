@@ -4,6 +4,7 @@
     font-size : 100px;
     font-weight:400;
     font-family:Cardo;
+    x-overflow:hidden;
 }
 a{
     text-decoration:none;
@@ -33,6 +34,7 @@ a{
     display:flex;
     justify-content:space-around;
     transition:1s;
+    z-index:11;
 }
 .scrolled {
     transform: translateY(-3rem);
@@ -1006,7 +1008,8 @@ footer {
 .story-text{
     font-size: 0.36rem;
     width: 4.8rem;
-
+    position:relative;
+    left:4.5rem;
 }
 .text-1-in{
     font-size: 0.12rem;
@@ -1052,6 +1055,7 @@ footer {
     width: 4rem;
     padding: 0.5rem;
     position: relative;
+    visibility:hidden;
 }
 .text-blog2{
     font-size: 0.3rem;
@@ -1072,7 +1076,7 @@ footer {
     width:1.3rem;
     text-align: center;  
     position: relative;
-    left: -1rem; 
+    left: -0.9rem; 
     transition: 0.4s;
 }
 .info {
@@ -1109,19 +1113,22 @@ footer {
     font:Cardo;
     color: #4a4a4a;
     font-size: 0.15rem;
-    width:500px;
+    width:37%;
     text-align: center;
     height:100px;
     padding: 16px;
     position: relative;
-    right: 15px;
+    left:0.3rem;
 }
 .wed-text{
+    position:relative;
+    left:0.4rem;
     font-size: 0.3rem;
     font: Asul;
     letter-spacing: 2.5px;
     text-align: center;
     width: 400px;
+    top:-0.1rem;
 }
 .charming-btn{
     width:1.8rem;
@@ -1130,7 +1137,7 @@ footer {
     position:relative;
     border:1px solid black;
     transition:0.2s;
-    left: 0.4rem;
+    left: 0.48rem;
     top: -0.4rem;
 }
 
@@ -1166,7 +1173,7 @@ footer {
 }
 .info-date1{
     position: relative;
-    left: 1rem;
+    left: 1.15rem;
 }
 .cactus{
     background-color: white;
@@ -1211,7 +1218,7 @@ footer {
     text-align: center;
     position: relative;
     top: -3.5rem;
-    left: 2.5rem;
+    left: 2.45rem;
 }
 .cac-text{
     font-size: 0.3rem;
@@ -1230,12 +1237,12 @@ footer {
     font:Cardo;
     color: #4a4a4a;
     font-size: 0.15rem;
-    width:500px;
+    width:37%;
     text-align: center;
     height:100px;
     padding: 16px;
     position: relative;
-    right: 15px;
+    
 }
 .default-cactus{
     position: relative;
@@ -1245,7 +1252,7 @@ footer {
 .cactus-btn{
     position: relative;
     top: -3.6rem;
-    left: 2rem;
+    left: 1.86rem;
 }
 .happiness{
     background-color: white;
@@ -1274,6 +1281,8 @@ footer {
     
 }
 .info-f {
+    position:relative;
+    left:-0.1rem;
     font-size: 0.12rem;
     font-family: Asul;
     color: #a2a2a3;
@@ -1283,19 +1292,26 @@ footer {
     position: relative;
     transition: 0.4s;
 }
+.info-f-temp{
+    position:relative;
+    left:0;
+}
 .info-date3{
     display:flex;
     flex-direction: row;
     position: relative;
-    left: 7.5rem;
+    left: 7.4rem;
     top: -3.5rem;
 }
 .hap-text{
+    position:relative;
+    left:-0.13rem;
     font-size: 0.3rem;
     font: Asul;
     letter-spacing: 2.5px;
     text-align: center;
     width: 400px;
+    top:-0.1rem;
 }
 .happiness-text{
     position: relative;
@@ -1307,12 +1323,13 @@ footer {
     font:Cardo;
     color: #4a4a4a;
     font-size: 0.15rem;
-    width:500px;
+    width:37%;
     text-align: center;
     height:100px;
     padding: 16px;
+    top:-0.2rem;
     position: relative;
-    right: 15px;
+    
 }
 .default-fluffy {
     position: relative;
@@ -1341,7 +1358,7 @@ footer {
 }
 .fluffy-btn{
     top: -3.5rem;
-    left: 7.8rem;
+    left: 7.6rem;
 }
 .braies{
     background-color: white;
@@ -1372,14 +1389,17 @@ footer {
     font:Cardo;
     color: #4a4a4a;
     font-size: 0.15rem;
-    width:500px;
+    top:-0.2rem;
+    width:37%;
     text-align: center;
     height:100px;
     padding: 16px;
     position: relative;
-    right: 15px;
+    left:0.3rem;
 }
 .lag-text{
+    position:relative;
+    top:-0.15rem;
     font-size: 0.3rem;
     font: Asul;
     letter-spacing: 2.5px;
@@ -1418,7 +1438,7 @@ footer {
 .lago-btn{
     position: relative;
     top: -3.3rem;
-    left: 1.9rem;
+    left: 2rem;
 }
 .smile{
     background-color: white;
@@ -1440,21 +1460,24 @@ footer {
     flex-direction: row;
     position: relative;
     top:-3.1rem;
-    left: 7rem;
+    left: 7.35rem;
 }
 .default-text-s {
     font:Cardo;
     color: #4a4a4a;
     font-size: 0.15rem;
-    width:500px;
+    width:37%;
     text-align: center;
     height:100px;
     padding: 16px;
     position: relative;
-    right: 15px;
+    left:0.34rem;
 }
 .doub-text{
     font-size: 0.3rem;
+    position:relative;
+    left:0.3rem;
+    top:-0.16rem;
     font: Asul;
     letter-spacing: 2.5px;
     text-align: center;
@@ -1467,7 +1490,7 @@ footer {
     position:relative;
     border:1px solid black;
     transition:0.2s;
-    left: 0.4rem;
+    left: 1rem;
     top: -0.4rem;
 }
 .read-text-smile{
@@ -1492,7 +1515,7 @@ footer {
 .smile-btn{
     position: relative;
     top:-3.2rem;
-    left: 7.4rem;
+    left: 7.6rem;
 
 }
 .italy{
@@ -1524,7 +1547,9 @@ footer {
     font:Cardo;
     color: #4a4a4a;
     font-size: 0.15rem;
-    width:500px;
+    width:37%;
+    position:relative;
+    top:-0.1rem;
     text-align: center;
     height:100px;
     padding: 16px;
@@ -1532,6 +1557,8 @@ footer {
     right: 15px;
 }
 .ita-text{
+    position:relative;
+    top:-0.15rem;
     font-size: 0.3rem;
     font: Asul;
     letter-spacing: 2.5px;
@@ -1563,9 +1590,28 @@ footer {
 }
 .italy-btn{
     position: relative;
-    left: 1.2rem;
+    left: 1.13rem;
     top: -0.45rem;
 }
+.italy-btn-text{
+    height:0.5rem;
+}
+.smile-btn-text{
+    height:0.5rem;
+}
+.lago-btn-text{
+    height:0.5rem;
+}
+.fluffy-btn-text{
+    height:0.5rem;
+}
+.cactus-btn-text{
+    height:0.5rem;
+}
+.charming-btn-text{
+    height:0.5rem;
+}
+
 .date:hover{
     opacity: 0.5;
 }
@@ -1650,6 +1696,7 @@ footer {
 .text-4-in:hover{
     color: black;
 }
+
 
 
 
@@ -1930,8 +1977,6 @@ textarea{
     top:1.7rem;
     left:2.1rem;
 }
-
-
 
 
 
