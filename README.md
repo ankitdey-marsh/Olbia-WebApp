@@ -11,7 +11,7 @@ _See [Olbia](#) for a preview._
 
 # Getting Started
 1. `$ git clone https://github.com/ankitdey-marsh/Olbia-WebApp.git` - clone this project to your computer
-2. `$ cd wedding-website` - go inside the project directory
+2. `$ cd Olbia-Webapp` - go inside the project directory
 3. `$ npm install` - install dependencies
 4. That's it, open `index.html` file on your browser by just _local-hosting_ it.
 
