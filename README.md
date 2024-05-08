@@ -24,7 +24,7 @@ my leisure time and this is one of them. Now that my this project is over, I am 
 Lastly, I would like to put it out there that I have worked on other projects that you may like. You can check them out at my [Github](https://github.com/ankitdey-marsh/). Give it a whirl and let me know your thoughts.
 
 # Contribute
-Firstly, a big thank you 🙏🏻 to __[Ananya Biswas](https://github.com/ananyab1909)__ for putting a lot of effort onto this project as she worked alongside me. This project would not be have be possible with her.
+Firstly, a big thank you 🙏🏻 to __[Ananya Biswas](https://github.com/ananyab1909)__ for putting a lot of effort into this project as she worked alongside me. This project would not be have be possible with her. 
 
 If you would like to contribute to this project, you can do so by creating a [PR](https://help.github.com/articles/about-pull-requests/); and to support my work, you can click on the projects you like and reward a star.
 
