@@ -1745,9 +1745,10 @@ textarea{
     line-height:17px;
 }
 .portfolio-page{
-    height:250vh;
-    background-color:#f5f5f4;
+    height:300vh;
     display:none;
+    overflow-y: hidden;
+
 }
 .pages-page{
     height:400vh;
@@ -2057,16 +2058,6 @@ textarea{
     width:3.2rem;
     right:30px;
 }
-/* .brownsuit{
-    position: relative;
-    top: 3rem;
-    width:1rem;
-    height:10px;
-
-} */
-.pic1-port{
-    width:3rem;
-}
  
 .love{
     height:2.45rem;
@@ -2076,7 +2067,7 @@ textarea{
 }
 .laughing{
     height:5.5rem;
-    width:3.7rem;
+    width:3.8rem;
 }
 .couple-1{
     display: flex;
@@ -2085,7 +2076,140 @@ textarea{
     position: relative;
     top:-80px;
 }
+.happy-port{
+    position: relative;
+    top:-0.9rem;
+    left:8.11rem;
+    width: 2rem;
+}
+.happy-in-port{
+    height:2.5rem;
+}
+.coup-in-port{
+    height: 2.5rem;
+}
+.couple-2{
+    position: relative;
+    top:-6.5rem;
+    left:8.13rem;
+    width: 2rem;
+}
+.brownsuit{
+    height:5.45rem;
+    width:3.4rem;
+}
+.couple-3{
+    position: relative;
+    top:-9.3rem;
+    left:0.35rem;
+    width:3.59rem;
+}
+.bluesea{
+    height:2.5rem;
+    position: relative;
+    top:-12.1rem;
+    left:4.05rem;
+}
+.couple-4{
+    height:2rem;
+    width:2rem;
+}
+.text-descport{
+    color:#4a4a4a;
+    font-family: Cardo;
+    font-size:0.18rem;
+    line-height: 25px;
+}
+.port-text{
+    height:2rem;
+    position: relative;
+    top:-11rem;
+    width:7.5rem;
+    text-align: center;
+    left: 2.5rem;
+}
+.share-port{
+    position: relative;
+    top:-12.2rem; 
+    left:4.9rem;
+    width:3rem;
+}
+.share-text{
+    color:#9b9b9b;
+    font-family: Cardo;
+    font-size:0.17rem;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.social-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -13.2rem;
+    left: 7.2rem;
+    width:1rem;
+}
+.social-port{
+    width:0.5rem;
+}
+.fb-btn-portfolio{
+    height:0.2rem;
+    transition: 0.3s;
+}
+.pin-btn-portfolio{
+    height:0.2rem;
+    transition: 0.3s;
+}
+.x-btn-portfolio{
+    height:0.2rem;
+    transition: 0.3s;
+}
+.fb-btn-portfolio:hover{
+    opacity: 0.5;;
+}
+.pin-btn-portfolio:hover{
+    opacity: 0.5;;
+}
+.x-btn-portfolio:hover{
+    opacity: 0.5;;
+}
+.port-text-last{
 
+}
+.last-text{
+    color:#9b9b9b; 
+    font-family: Cardo;
+    font-size:0.17rem;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.port-text-last{
+    position: relative;
+    top:-13.35rem;
+    left:5.5rem;
+    width:2rem;
+}
+.last-port-tag{
+    width:0.6rem;
+    position: relative;
+    top:-13.56rem;
+    left:6.3rem;
+    text-align: center;
+    border: thin solid #c8c8c7;
+    border-radius: 20px;
+    height:0.165rem;
+    padding-top:0.05rem;
+}
+.last-tag-inner{
+    font:Asul;
+    font-size: 0.1rem;
+    color: black;
+    letter-spacing: 2px;
+}
+.last-port-tag:hover{
+    opacity: 0.5;
+}
 
 
 
