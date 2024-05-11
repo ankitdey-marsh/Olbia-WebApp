@@ -12,7 +12,8 @@ a{
 .topdiv-p{
     position:relative;
     display:inline-block;
-    top:1.9rem;  
+    top:1.9rem; 
+    left:0.74rem; 
     font-size:0.4rem;
     transform:scaleY(0.9);
     letter-spacing:3px;
@@ -71,12 +72,13 @@ a{
 .view-gallery{
     width:9.5%;
     position:relative;
-    left:5.75rem;
+    /* left:5.75rem; */
     letter-spacing:2px;
     border-bottom: thin solid white;
     padding-bottom:7px;
-    top:2.2rem;
+    /* top:2.2rem; */
     transition:0.4s;
+    display:inline-block; 
 }
 .view-gallery:hover{
     opacity:0.5;
@@ -2232,7 +2234,13 @@ textarea{
 }
 
 
-
+.vga{
+    position:relative;
+    top:2.65rem;
+    left:-2.5rem;
+    height:0;
+    font-size:12px;
+}
 
 
 
