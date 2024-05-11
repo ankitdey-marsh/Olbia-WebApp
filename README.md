@@ -9,6 +9,7 @@ _See [Olbia](#) for a preview._
 4. __Receive email alerts__ when someone contacts through the page.
 5. Start and run the website __completely free__. No hosting, backend server, or database required.
 \
+\
 __PS__: This website is built on basic HTML, CSS and Javascript hence implementing responsiveness was not possible. Best suited for __1980x1080__ resolution displays.
 
 
