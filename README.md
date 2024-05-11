@@ -8,6 +8,11 @@ _See [Olbia](#) for a preview._
 3. __EmailJs__ which directly sends mail to personal email.
 4. __Receive email alerts__ when someone contacts through the page.
 5. Start and run the website __completely free__. No hosting, backend server, or database required.
+\
+__PS__: This website is built on basic HTML, CSS and Javascript hence implementing responsiveness was not possible. Best suited for __1980x1080__ resolution displays.
+
+
+
 
 # Getting Started
 1. `$ git clone https://github.com/ankitdey-marsh/Olbia-WebApp.git` - clone this project to your computer
@@ -38,7 +43,6 @@ If you would like to contribute to this project, you can do so by creating a [PR
     - Twitter : https://twitter.com/marshdit/
     - Instagram : https://instagram.com/anxit_dxy/
     - Github : https://github.com/ankitdey-marsh/
-
 
 
 
