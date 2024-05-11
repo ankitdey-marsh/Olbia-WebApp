@@ -834,7 +834,7 @@ footer {
 .image-container_2{
     height:70vh;
     width:100%;
-    background-image: url("C:/Coding/Own/Olbia-WebApp/olbia/pages_img.jpg");
+    background-image: url("../olbia/pages_img.jpg");
     background-repeat: no-repeat;
     background-position:center;
     background-size:100%;
