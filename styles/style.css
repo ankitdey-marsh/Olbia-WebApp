@@ -1745,9 +1745,10 @@ textarea{
     line-height:17px;
 }
 .portfolio-page{
-    height:250vh;
-    background-color:#f5f5f4;
+    height:300vh;
     display:none;
+    overflow-y: hidden;
+
 }
 .pages-page{
     height:400vh;
@@ -1977,6 +1978,243 @@ textarea{
     top:1.7rem;
     left:2.1rem;
 }
+.port-pics{
+
+
+}
+.brendanport{
+    position: relative;
+    top: 1rem;
+    padding: 30px;
+}
+.brendanpic{
+    width: 11rem;
+    position: relative;
+    left: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+.brendan{
+    position: relative;
+    font-size: 38px;
+    color: white;
+    font-family: Cardo;
+    left:1rem;
+    letter-spacing: 2.5px;
+}
+.text-brendan {
+    position: relative;
+    top: -1.25rem;
+    left: 0.25rem;
+    width:5rem;
+}
+.text-brendan1{
+    color: white;
+    width:2rem;
+    position: relative;
+    left:10rem;
+}
+.brendan1-in{
+    font-size: 0.15rem;
+    font-family: Asul;
+    letter-spacing: 2px;
+}
+.brendan2-in{
+    font-size: 0.15rem;
+    font-family: Asul;
+    letter-spacing: 2px;
+}
+.brendan1-port{
+    width:1.5rem;
+    position: relative;
+    top:-1.4rem;
+    left:9.5rem;
+    color: #FFFFFF;
+}
+.brendan1{
+    font-size: 0.12rem;
+    font-family: Asul;
+    letter-spacing: 2px;
+}
+.brendan2-port{
+    width:1.5rem;
+    position: relative;
+    top:-1.55rem;
+    left:10.75rem;
+    color: #FFFFFF;
+}
+.brendan2{
+    font-size: 0.12rem;
+    font-family: Asul;
+    letter-spacing: 2px;
+}
+.port-pics{
+    height:300vh;
+}
+.blackwhite{
+    height:2.45rem;
+    position: relative;
+    width:3.2rem;
+    right:30px;
+}
+ 
+.love{
+    height:2.45rem;
+    position:relative;
+    width:3.5rem;
+    left: 30px;
+}
+.laughing{
+    height:5.5rem;
+    width:3.8rem;
+}
+.couple-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top:-80px;
+}
+.happy-port{
+    position: relative;
+    top:-0.9rem;
+    left:8.11rem;
+    width: 2rem;
+}
+.happy-in-port{
+    height:2.5rem;
+}
+.coup-in-port{
+    height: 2.5rem;
+}
+.couple-2{
+    position: relative;
+    top:-6.5rem;
+    left:8.13rem;
+    width: 2rem;
+}
+.brownsuit{
+    height:5.45rem;
+    width:3.4rem;
+}
+.couple-3{
+    position: relative;
+    top:-9.3rem;
+    left:0.35rem;
+    width:3.59rem;
+}
+.bluesea{
+    height:2.5rem;
+    position: relative;
+    top:-12.1rem;
+    left:4.05rem;
+}
+.couple-4{
+    height:2rem;
+    width:2rem;
+}
+.text-descport{
+    color:#4a4a4a;
+    font-family: Cardo;
+    font-size:0.18rem;
+    line-height: 25px;
+}
+.port-text{
+    height:2rem;
+    position: relative;
+    top:-11rem;
+    width:7.5rem;
+    text-align: center;
+    left: 2.5rem;
+}
+.share-port{
+    position: relative;
+    top:-12.2rem; 
+    left:4.9rem;
+    width:3rem;
+}
+.share-text{
+    color:#9b9b9b;
+    font-family: Cardo;
+    font-size:0.17rem;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.social-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -13.2rem;
+    left: 7.2rem;
+    width:1rem;
+}
+.social-port{
+    width:0.5rem;
+}
+.fb-btn-portfolio{
+    height:0.2rem;
+    transition: 0.3s;
+}
+.pin-btn-portfolio{
+    height:0.2rem;
+    transition: 0.3s;
+}
+.x-btn-portfolio{
+    height:0.2rem;
+    transition: 0.3s;
+}
+.fb-btn-portfolio:hover{
+    opacity: 0.5;;
+}
+.pin-btn-portfolio:hover{
+    opacity: 0.5;;
+}
+.x-btn-portfolio:hover{
+    opacity: 0.5;;
+}
+.port-text-last{
+
+}
+.last-text{
+    color:#9b9b9b; 
+    font-family: Cardo;
+    font-size:0.17rem;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.port-text-last{
+    position: relative;
+    top:-13.35rem;
+    left:5.5rem;
+    width:2rem;
+}
+.last-port-tag{
+    width:0.6rem;
+    position: relative;
+    top:-13.56rem;
+    left:6.3rem;
+    text-align: center;
+    border: thin solid #c8c8c7;
+    border-radius: 20px;
+    height:0.165rem;
+    padding-top:0.05rem;
+}
+.last-tag-inner{
+    font:Asul;
+    font-size: 0.1rem;
+    color: black;
+    letter-spacing: 2px;
+}
+.last-port-tag:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
 
 
 
