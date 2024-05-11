@@ -473,3 +473,112 @@ function gotosub(){
     image_container2.classList.remove('not-hidden');
     pages_page.classList.remove('not-hidden');
 }
+
+const gallery = document.querySelectorAll('.view-gallery');
+gallery.forEach(button1 => {
+  button1.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+    topdiv.classList.add('hidden');
+    text1.classList.add('add_color');
+    secondtopdiv.classList.add('hidden');
+    thirddiv.classList.add('hidden');
+    testimonials.classList.add('hidden');
+    fourthdiv.classList.add('hidden');
+    lastdiv.classList.add('hidden');
+    portfolio_page.classList.add('not-hidden');
+    image_container.classList.remove('not-hidden');
+    contact_page.classList.remove('not-hidden');
+    blog_pg.classList.remove('not-hidden');
+    tick1.classList.remove('not-hidden');
+    tick2.classList.remove('not-hidden');
+    pages_page.classList.remove('not-hidden');
+    image_container2.classList.remove('not-hidden');
+
+  });
+});
+
+const gallery1 = document.querySelector('.photo-par');
+gallery1.addEventListener('click', () => {
+  window.scrollTo(0, 0);
+  topdiv.classList.add('hidden');
+  text1.classList.add('add_color');
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  portfolio_page.classList.add('not-hidden');
+  image_container.classList.remove('not-hidden');
+  contact_page.classList.remove('not-hidden');
+  blog_pg.classList.remove('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
+
+});
+const btn= document.querySelectorAll('.btnspl');
+const btnspl = document.querySelectorAll('.btnspl');
+btnspl.forEach(button2 => {
+  button2.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+    topdiv.classList.add('hidden');
+    text1.classList.add('add_color');
+    secondtopdiv.classList.add('hidden');
+    thirddiv.classList.add('hidden');
+    testimonials.classList.add('hidden');
+    fourthdiv.classList.add('hidden');
+    lastdiv.classList.add('hidden');
+    portfolio_page.classList.add('not-hidden');
+    image_container.classList.remove('not-hidden');
+    contact_page.classList.remove('not-hidden');
+    blog_pg.classList.remove('not-hidden');
+    tick1.classList.remove('not-hidden');
+    tick2.classList.remove('not-hidden');
+    pages_page.classList.remove('not-hidden');
+    image_container2.classList.remove('not-hidden');
+
+  });
+});
+
+const sndbtn = document.querySelectorAll('.secondlist');
+sndbtn.forEach(button3 => {
+  button3.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+    topdiv.classList.add('hidden');
+    text1.classList.add('add_color');
+    secondtopdiv.classList.add('hidden');
+    thirddiv.classList.add('hidden');
+    testimonials.classList.add('hidden');
+    fourthdiv.classList.add('hidden');
+    lastdiv.classList.add('hidden');
+    portfolio_page.classList.add('not-hidden');
+    image_container.classList.remove('not-hidden');
+    contact_page.classList.remove('not-hidden');
+    blog_pg.classList.remove('not-hidden');
+    tick1.classList.remove('not-hidden');
+    tick2.classList.remove('not-hidden');
+    pages_page.classList.remove('not-hidden');
+    image_container2.classList.remove('not-hidden');
+
+  });
+});
+const contactButton3=document.querySelector('.con');
+contactButton3.addEventListener('click', () => {
+  window.scrollTo(0, 0);
+  topdiv.classList.add('hidden');
+  text1.classList.add('add_color');
+  secondtopdiv.classList.add('hidden');
+  thirddiv.classList.add('hidden');
+  testimonials.classList.add('hidden');
+  fourthdiv.classList.add('hidden');
+  lastdiv.classList.add('hidden');
+  image_container.classList.add('not-hidden');
+  blog_pg.classList.remove('not-hidden');
+  contact_page.classList.add('not-hidden');
+  tick1.classList.remove('not-hidden');
+  tick2.classList.remove('not-hidden');
+  portfolio_page.classList.remove('not-hidden');
+  pages_page.classList.remove('not-hidden');
+  image_container2.classList.remove('not-hidden');
+});
