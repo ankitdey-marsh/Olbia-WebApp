@@ -1,6 +1,6 @@
 # Olbia
 A beautiful, aesthetic , laptop friendly wedding website.  
-_See [Olbia](#) for a preview._
+_See [Olbia](https://olbia-web-app.vercel.app/) for a preview._
 
 # Highlights
 1. Slick and beautiful design.
@@ -10,7 +10,7 @@ _See [Olbia](#) for a preview._
 5. Start and run the website __completely free__. No hosting, backend server, or database required.
 \
 \
-__PS__: This website is built on basic HTML, CSS and Javascript hence implementing responsiveness was not possible. Best suited for __1980x1080__ resolution displays.
+__PS__: This website is built on basic HTML, CSS and Javascript hence implementing responsiveness was not possible. Best suited for __1980x1080__ resolution displays at __150% Scale__.
 
 
 
