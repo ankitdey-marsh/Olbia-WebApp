@@ -18,8 +18,7 @@ __PS__: This website is built on basic HTML, CSS and Javascript hence implementi
 # Getting Started
 1. `$ git clone https://github.com/ankitdey-marsh/Olbia-WebApp.git` - clone this project to your computer
 2. `$ cd Olbia-Webapp` - go inside the project directory
-3. `$ npm install` - install dependencies
-4. That's it, open `index.html` file on your browser by just _local-hosting_ it.
+3. That's it, open `index.html` file on your browser by just _local-hosting_ it.
 
 
 
